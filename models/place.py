@@ -1,12 +1,12 @@
-#!?usr/bin/python3
+#!/usr/bin/python3
 
 """ Represent Class of place"""
 
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
-    """ 
-        Represents Place
+    """Represents Place
     Attributes:
         city_id (str): city of location
         user_id (str): owner
@@ -20,12 +20,12 @@ class Place(BaseModel):
         longitude (float): longitude part of location
         amenity_id (str): amenity it belongs to
     """
-    city_id = ""     
+    city_id = ""
     user_id = ""
     name = ""
     description  = ""
-    number_rooms = ""  
-    number_bathrooms = ""   
+    number_rooms = ""
+    number_bathrooms = ""
     max_guest = ""
     price_by_night = ""
     latitude = ""
