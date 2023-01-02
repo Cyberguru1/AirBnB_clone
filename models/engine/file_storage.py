@@ -11,10 +11,11 @@ from models.place import Place
 from models.review import Review
 from models.state import State
 
+
 class FileStorage:
     """
         Storing files through
-        Serialization and Deserialization 
+        Serialization and Deserialization
     Attributes:
         _file_path(str): path to json file objects
         _objects(dict): dictionary of all objects
@@ -40,7 +41,7 @@ class FileStorage:
 
     def reload(self):
         try:
-            with open(FileStorage,__file_path) as f:
+            with open(FileStorage, __file_path) as f:
                 obj_dict = json.load(f)
                 for o in obj_dict.values():
                     cls_name = o["__class__"]

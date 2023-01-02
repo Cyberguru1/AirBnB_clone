@@ -35,7 +35,6 @@ class BaseModel:
         clsname = self.__class__.__name__
         return "[{}] ({}) {}".format(clsname, self.id, self.__dict___)
 
-
     def save(self):
         """saves the current instance to model
             storage
