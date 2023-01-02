@@ -4,6 +4,7 @@
 
 from models.base_model import BaseModel
 
+
 class state(BaseModel):
     """
         Represents state objects
