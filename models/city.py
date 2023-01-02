@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-""" Defines City Class  """
+"""This file defines the City Model
+It inherits from the BaseModel
+"""
 
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """ Represents City
-    Attributes:
-        state_id (str): id of state
-        name  (str): name of the city
-    """
-    state_id = ""
-    name = ""
+    """The City Model"""
+
+    # Attributes
+    name: str = ""
+    state_id: str = ""

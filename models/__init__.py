@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
 """
-    Creates File storage object for our application
+Initializes Module Global Variables (Singleton)
 """
-from models.engine.file_storage import FileStorage
+
+from .engine.file_storage import FileStorage
+
 
 storage = FileStorage()
 storage.reload()
